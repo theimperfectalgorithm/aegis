@@ -1,0 +1,19 @@
+# Example Forex Accounts for AEGIS Data Collection
+accounts:
+  - account_id: demo_exp_01
+    broker: ExampleBroker
+    trading_mode: DATA_COLLECTION
+    risk_profile: experimental
+    max_daily_trades: 12
+    leverage: 100
+    currency: USD
+    status: active
+  - account_id: demo_bal_01
+    broker: ExampleBroker
+    trading_mode: DATA_COLLECTION
+    risk_profile: balanced
+    max_daily_trades: 10
+    leverage: 50
+    currency: USD
+    status: active
+# Add more accounts as needed for data collection phase

@@ -1,0 +1,35 @@
+# Indian Equity Strategy Configuration
+# Controls which strategies are active and their parameters.
+
+enabled_strategies:
+  - OPENING_RANGE_BREAKOUT
+
+strategy_params:
+  OPENING_RANGE_BREAKOUT:
+    range_window_start: "09:15"     # IST — NSE market open
+    range_window_end: "09:30"       # IST — end of 15-min opening range
+    squareoff_deadline: "15:15"     # IST — MIS squareoff hard cut-off
+    tp_multiplier: 1.5              # Take-profit = range_size × 1.5
+    sl_buffer_pct: 0.001            # 0.1% extra buffer beyond range boundary for SL
+    min_range_size_pct: 0.002       # Ignore signal if range < 0.2% of price (too tight)
+    candle_interval: "15minute"     # Kite candle interval for data fetch
+
+# Watchlist: subset of Nifty 50 to scan each day.
+# Start with high-liquidity large-caps for cleanest ORB signals.
+# Expand once strategy is validated.
+watchlist:
+  - RELIANCE
+  - HDFCBANK
+  - ICICIBANK
+  - INFY
+  - TCS
+  - SBIN
+  - AXISBANK
+  - KOTAKBANK
+  - BHARTIARTL
+  - WIPRO
+  - LT
+  - TATAMOTORS
+  - MARUTI
+  - BAJFINANCE
+  - SUNPHARMA

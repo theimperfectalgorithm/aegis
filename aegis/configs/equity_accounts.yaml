@@ -1,0 +1,25 @@
+# Indian Equity Account Configurations
+# Each account maps to a Zerodha Kite trading account.
+# trading_mode: DATA_COLLECTION (safe, logs only) | LIVE_FUND (real execution)
+# Switch to LIVE_FUND only after strategy validation on paper trading.
+
+accounts:
+  - account_id: "NSE001"
+    exchange: "NSE"
+    risk_profile: "balanced"
+    trading_mode: "DATA_COLLECTION"   # Paper trading — change to LIVE_FUND when ready
+    capital: 500000                   # INR 5 lakhs starting capital
+    max_daily_trades: 5
+    max_daily_loss_pct: 0.02          # 2% daily loss limit = ₹10,000
+    product: "MIS"                    # Intraday only
+    squareoff_deadline: "15:15"       # IST — MIS auto-squareoff buffer before broker's 15:20
+
+  - account_id: "NSE002"
+    exchange: "NSE"
+    risk_profile: "conservative"
+    trading_mode: "DATA_COLLECTION"
+    capital: 200000                   # INR 2 lakhs
+    max_daily_trades: 3
+    max_daily_loss_pct: 0.015         # 1.5% daily loss limit = ₹3,000
+    product: "MIS"
+    squareoff_deadline: "15:15"

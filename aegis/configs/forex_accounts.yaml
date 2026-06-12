@@ -1,0 +1,19 @@
+
+# Example prop firm account definitions
+accounts:
+	- account_id: "PROP001"
+		risk_profile: "conservative"
+		trading_mode: "LIVE_FUND"
+		max_daily_trades: 2
+	- account_id: "PROP002"
+		risk_profile: "balanced"
+		trading_mode: "DATA_COLLECTION"
+		max_daily_trades: 4
+	- account_id: "PROP003"
+		risk_profile: "aggressive"
+		trading_mode: "LIVE_FUND"
+		max_daily_trades: 6
+	- account_id: "PROP004"
+		risk_profile: "experimental"
+		trading_mode: "DATA_COLLECTION"
+		max_daily_trades: 10

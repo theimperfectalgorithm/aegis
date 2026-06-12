@@ -1,0 +1,22 @@
+# Main Agent Configuration for AEGIS
+# Add/merge with existing config if present
+
+trading_mode: DATA_COLLECTION
+symbols: []
+start_date: 2020-01-01
+end_date: 2020-12-31
+enable_ml: true
+backtest_mode: false
+
+# ...other config fields as needed...
+live_mode: true
+# Indicates the system is running in live (not backtest) mode
+
+data_collection_phase: true
+# Enables special logging and disables live trading
+
+ml_enabled: true
+# ML filter is active for all trades
+
+auto_pause_on_anomaly: true
+# System will auto-pause if anomaly detected

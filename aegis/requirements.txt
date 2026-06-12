@@ -1,0 +1,2 @@
+# Requirements for AEGIS – Multi-Agent Capital & Trading System
+# TODO: Add production dependencies as needed.

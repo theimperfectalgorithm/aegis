@@ -1,0 +1,32 @@
+
+conservative:
+  live_min_confidence: 0.60
+  data_min_confidence: 0.50
+  max_trades_per_day: 2
+  risk_per_trade_percent: 0.5        # 0.5% of capital risked per trade
+  max_daily_loss_pct: 0.015          # 1.5% max daily loss
+  commodity_max_volatility: 0.015    # 1.5% commodity volatility cap
+
+balanced:
+  live_min_confidence: 0.55
+  data_min_confidence: 0.45
+  max_trades_per_day: 4
+  risk_per_trade_percent: 1.0        # 1% of capital risked per trade
+  max_daily_loss_pct: 0.02           # 2% max daily loss
+  commodity_max_volatility: 0.02     # 2% commodity volatility cap
+
+aggressive:
+  live_min_confidence: 0.50
+  data_min_confidence: 0.40
+  max_trades_per_day: 6
+  risk_per_trade_percent: 1.5        # 1.5% of capital risked per trade
+  max_daily_loss_pct: 0.03           # 3% max daily loss
+  commodity_max_volatility: 0.03     # 3% commodity volatility cap
+
+experimental:
+  live_min_confidence: 0.65
+  data_min_confidence: 0.35
+  max_trades_per_day: 10
+  risk_per_trade_percent: 2.0        # 2% of capital risked per trade
+  max_daily_loss_pct: 0.05           # 5% max daily loss
+  commodity_max_volatility: 0.05     # 5% commodity volatility cap
